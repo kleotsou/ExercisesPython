@@ -34,7 +34,13 @@ for i in range(x1):
   k = z.lower()
   word.append(k)
 word.sort(key=len)
+lastword = []
 for i in range(x1-1, x1-6, -1):
   m = word[i]
   z = remove_chars(m, 'aeioyu')
-  print(z)
+  z1 = len(z)
+  new = " "
+  for j in range(z1-1, -1, -1):
+    new = new + z[j]
+  lastword.append(new)
+print(lastword)
