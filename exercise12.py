@@ -62,13 +62,17 @@ else:
       print("Ο μήνας που δώθηκε έχει 30 μερες.")
       
 print("Η ημερομηνία που δώθηκε είναι:", year, "-", month, "-", day)
-      
+  if (year >= y) and (month >= m) and (day > d):
+    day = day - 1                      
+
 from datetime import date
 x1 = date(y, m, d)
 x2 = date(year, month, day)
 x3 = (x2 - x1)
 
-if (year >= y) and (month >= m) and (day >= d):
-  print("Απέχει", abs(x3), h, "ώρες", s, "δευτερόλεπτα")
+if (year == y) and (month == m) and (day == d):
+  print("Ίδια ημερομηνία με την τρέχουσα")
+elif (year >= y) and (month >= m) and (day >= d):
+  print("Απέχει", abs(x3), 24-h, "ώρες", 3600-s, "δευτερόλεπτα")
 else:
   print("Απέχει", abs(x3), 24-h, "ώρες", 3600-s, "δευτερόλεπτα")
