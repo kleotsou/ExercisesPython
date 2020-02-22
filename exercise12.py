@@ -18,7 +18,6 @@ d = int(formatted[6] + formatted[7])
 m1 = str(current_time)
 m2 = m1.split(':')
 time = m2[0] + m2[1] + m2[2]
-print(time)
 
 h = int(time[0] + time[1])
 mi = int(time[2] + time[3])*60
