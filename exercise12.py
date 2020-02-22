@@ -76,4 +76,4 @@ if (year == y) and (month == m) and (day == d):
 elif (year >= y) and (month >= m) and (day >= d):
   print("Απέχει", abs(x3), 24-h-1, "ώρες", 3600-s, "δευτερόλεπτα")
 else:
-  print("Απέχει", abs(x3), 24-h, "ώρες", 3600-s, "δευτερόλεπτα")
+  print("Απέχει", abs(x3), h, "ώρες", s, "δευτερόλεπτα")
