@@ -7,6 +7,14 @@ now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
 print("Η τρέχουσα ώρα είναι =", current_time)
 
+da = str(today1)
+ds = da.split('-')
+formatted = ds[0] + ds[1] = ds[2]
+
+y = int(formatted[0] + formatted[1] + formatted[2] + formatted[3])
+m = int(formatted[4] + formatted[5])
+d = int(formatted[6] + formatted[7])
+
 year = int(input("Δώσε τον χρόνο που θες:"))
 while (year == " ") or (year < 0):
   year = int(input("Δώσε τον χρόνο που θες:"))
@@ -44,4 +52,15 @@ else:
       while (day < 1) or (day > 30) or (day == " "):
         day = int( input("Δώσε την ημέρα που θες:"))
       print("Ο μήνας που δώθηκε έχει 30 μερες.")
-    
+      
+print("Η ημερομηνία που δώθηκε είναι¨, year, "-", month, "-", day)
+      
+from datetime import date
+x1 = date(y, m, d)
+x2 = date(year, month, day)
+x3 = (x2 - x1)
+
+if (x3 < 0):
+      print("Η ημερομηνία που δώθηκε απο την τρέχουσα απέχει", -(x3), "μέρες και", current_time, "ώρες:λεπτά:δευτερόλεπτα")
+else:
+      print("Η ημερομηνία που δώθηκε απο την τρέχουσα απέχει", x3, "μέρες και", current_time, "ώρες:λεπτά:δευτερόλεπτα")
