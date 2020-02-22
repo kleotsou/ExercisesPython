@@ -15,6 +15,15 @@ y = int(formatted[0] + formatted[1] + formatted[2] + formatted[3])
 m = int(formatted[4] + formatted[5])
 d = int(formatted[6] + formatted[7])
 
+m1 = str(current_time)
+m2 = m1.split(':')
+time = m2[0] + m2[1] + m2[2]
+print(time)
+
+h = int(time[0] + time[1])
+mi = int(time[2] + time[3])*60
+s = int(time[4] + time[5])+mi 
+
 year = int(input("Δώσε τον χρόνο που θες:"))
 while (year == " ") or (year < 0):
   year = int(input("Δώσε τον χρόνο που θες:"))
@@ -59,5 +68,3 @@ from datetime import date
 x1 = date(y, m, d)
 x2 = date(year, month, day)
 x3 = (x2 - x1)
-from datetime import datetime
-print("Η ημερομηνία που δώθηκε απο την τρέχουσα απέχει", x3, "μέρες και", current_time, "ώρες:λεπτά:δευτερόλεπτα")
