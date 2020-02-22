@@ -67,3 +67,8 @@ from datetime import date
 x1 = date(y, m, d)
 x2 = date(year, month, day)
 x3 = (x2 - x1)
+
+if (year >= y) and (month >= m) and (day >= d):
+  print("Απέχει", abs(x3), h, "ώρες", s, "δευτερόλεπτα")
+else:
+  print("Απέχει", abs(x3), 24-h, "ώρες", 3600-s, "δευτερόλεπτα")
