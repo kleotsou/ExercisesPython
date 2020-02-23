@@ -7,7 +7,7 @@ def remove_chars(data, chars):
 def BadOrGood(x):
     j = "fckrFCKR"
     good = 0
-    bod = 0
+    bad = 0
     h = list(x)
     y = len(h)
     for i in range(y):
