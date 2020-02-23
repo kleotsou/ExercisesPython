@@ -6,7 +6,6 @@ def Function_ASCII(s):
   sum1 = 0
   for i in range(j):
     sum1+=y[i]
-  print(sum1)
   sum2 = 0
   for i in range(sum1):
     h = sum1 % (i+1)
@@ -21,7 +20,9 @@ def Function_ASCII(s):
 print("Give a string in ascii code:")
 s = input()
 while (s == " "):
-  print("Give a string in ascii code")
+  print("Give a string in ascii code:")
   s = input()
 Sum = Function_ASCII(s)
 print(Sum)
+
+
