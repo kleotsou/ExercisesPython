@@ -11,7 +11,7 @@ da = str(today1)
 ds = da.split('-')
 formatted = ds[0] + ds[1] + ds[2]
 y = int(formatted[0] + formatted[1] + formatted[2] + formatted[3])
-m = int(formattes[4] + formatted[5])
+m = int(formatted[4] + formatted[5])
 d = int(formatted[6] + formatted[7])
 
 m1 = str(current_time)
@@ -22,9 +22,9 @@ h = int(time[0] + time[1])
 mi = int(time[2] + time[3])*60
 s = int(time[4] + time[5])+mi
 
-year = int(input("Δώσε τον χρόνο που θες:")
+year = int(input("Δώσε τον χρόνο που θες:"))
 while (year == " ") or (year <0):
-  year = int(input("Δώσε τον χρόνο που θες:")
+  year = int(input("Δώσε τον χρόνο που θες:"))
 
 month = int(input("Δώσε το μήνα που θες:"))
 while (month < 1) or (month > 12) or (month == " "):
@@ -49,7 +49,7 @@ else:
    for i in range(8, 14, 2):
     if (month == i):
       while (day < 1) or (day > 31) or (day == " "):
-        day = int(input("Δώσε την ημέρα που θες:")
+        day = int(input("Δώσε την ημέρα που θες:"))
       print("Ο μήνας που δώθηκε έχει 31 μέρες")
    for i in range(4, 8, 2):
      if (month == i):
@@ -67,7 +67,7 @@ print("Η ημερομηνία που δώθηκε είναι:", year, "-", mont
 from datetime import date
 x1 = date(y, m, d)
 if (year >= y) and (month >= m) and (day >= d):
-  x2 = date(year, month, day-1
+  x2 = date(year, month, day-1)
 else:
   x2 = date(year, month, day)      
 x3 = (x2 - x1)                  
